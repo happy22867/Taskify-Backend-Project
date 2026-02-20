@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "../api/axios";
-import { useNavigate } from "react-router-dom";
+
 
 const BG_IMAGE = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=90";
 
 export default function Dashboard() {
-  const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
   const [showForm, setShowForm] = useState(false);
   const [editId, setEditId] = useState(null);
