@@ -92,7 +92,7 @@ const Landing = () => {
                 textShadow: "0 2px 10px rgba(0,0,0,0.3)",
               }}
             >
-              Taskify -
+              Taskify --
               <br />
               Simple <span style={{ color: "#c4f542" }}>Tasks ,</span>
               <br />

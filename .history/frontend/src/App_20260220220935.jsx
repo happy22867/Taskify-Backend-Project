@@ -4,7 +4,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Landing from "./pages/Landing";
 import ProtectedRoute from "./components/ProtectedRoute";
-import PublicRoute from "./components/publicRoute.jsx"; 
+import PublicRoute from "./components/publicRoute"; 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import NotFound from "./pages/NotFound";
