@@ -1,0 +1,155 @@
+Task Manager API & Frontend
+
+A full-stack project demonstrating a scalable REST API with authentication, role-based access control, and a simple frontend interface for interaction.
+
+🚀 Features
+🔐 Authentication & Authorization
+
+User Registration & Login
+
+Password hashing using bcrypt
+
+JWT-based authentication
+
+Role-based access control (Admin & User)
+
+📦 Backend (Node.js + Express)
+
+RESTful API design
+
+CRUD operations for tasks
+
+Protected routes using middleware
+
+Input validation and error handling
+
+API versioning (/api/v1)
+
+MongoDB database integration
+
+💻 Frontend (React)
+
+User registration & login UI
+
+Protected dashboard
+
+Create, view, and delete tasks
+
+Role-based UI (Admin vs User)
+
+API integration using Axios
+
+🛠️ Tech Stack
+
+Backend:
+
+Node.js
+
+Express.js
+
+MongoDB (Mongoose)
+
+JWT Authentication
+
+bcryptjs
+
+Frontend:
+
+React.js
+
+Axios
+
+React Router
+
+📁 Project Structure
+backend/
+│── src/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│── server.js
+
+frontend/
+│── src/
+│   ├── components/
+│   ├── pages/
+│   ├── api/
+│── App.js
+⚙️ Setup Instructions
+1. Clone Repository
+git clone <your-repo-link>
+cd project-folder
+2. Backend Setup
+cd backend
+npm install
+npm run dev
+
+Create a .env file:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+
+3. Frontend Setup
+cd frontend
+npm install
+npm start
+🔗 API Endpoints
+Auth Routes
+
+POST /api/v1/auth/register → Register user
+
+POST /api/v1/auth/login → Login user
+
+Task Routes (Protected)
+
+GET /api/v1/tasks → Get all tasks
+
+POST /api/v1/tasks → Create task
+
+PUT /api/v1/tasks/:id → Update task
+
+DELETE /api/v1/tasks/:id → Delete task
+
+🔒 Security Features
+
+Password hashing using bcrypt
+
+JWT token authentication
+
+Protected API routes
+
+Input validation
+
+Error handling middleware
+
+📬 API Testing
+
+All APIs are tested using Postman.
+A Postman collection is included in the repository for reference.
+
+📈 Scalability
+
+Modular folder structure for easy expansion
+
+Can be extended to microservices architecture
+
+Redis can be integrated for caching
+
+Load balancing can be applied for high traffic
+
+Docker support can be added for deployment
+
+📌 Notes
+
+Admin users have elevated privileges (e.g., delete tasks)
+
+Users can only perform allowed operations based on role
+
+Clean and scalable code structure followed
+
+👨‍💻 Author
+
+Developed as part of a Backend Developer Internship Assignment.
