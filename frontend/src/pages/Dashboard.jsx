@@ -249,10 +249,12 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    flexWrap: "wrap",
+    gap: "10px",
   },
 
   logo: {
-    fontSize: "30px",
+    fontSize: window.innerWidth < 600 ? "24px" : "30px",
     fontWeight: "800",
     color: "#fff",
     margin: 0,
@@ -262,13 +264,14 @@ const styles = {
   userSection: {
     display: "flex",
     alignItems: "center",
-    gap: "14px",
+    gap: window.innerWidth < 600 ? "8px" : "14px",
+    flexWrap: "wrap",
   },
 
   roleBadge: {
     padding: "6px 14px",
     borderRadius: "20px",
-    fontSize: "12px",
+    fontSize: window.innerWidth < 600 ? "10px" : "12px",
     fontWeight: "700",
   },
 
@@ -280,9 +283,8 @@ const styles = {
     borderRadius: "6px",
     color: "#e2e8f0",
     cursor: "pointer",
-    fontSize: "16px",
+    fontSize: window.innerWidth < 600 ? "14px" : "16px",
     fontWeight: "500",
-
   },
 
   mainContent: {
@@ -290,7 +292,7 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "flex-start",
-    padding: "40px 20px",
+    padding: window.innerWidth < 600 ? "20px 10px" : "40px 20px",
     overflow: "auto",
   },
 
@@ -336,11 +338,12 @@ const styles = {
     background: "rgba(255, 255, 255, 0.95)",
     backdropFilter: "blur(10px)",
     borderRadius: "12px",
-    padding: "18px",
+    padding: window.innerWidth < 600 ? "14px" : "18px",
     display: "flex",
+    flexDirection: window.innerWidth < 600 ? "column" : "row",
     justifyContent: "space-between",
-    alignItems: "flex-start",
-    gap: "16px",
+    alignItems: window.innerWidth < 600 ? "flex-start" : "flex-start",
+    gap: window.innerWidth < 600 ? "12px" : "16px",
     boxShadow: "0 8px 32px rgba(0,0,0,0.1)",
     border: "1px solid rgba(255,255,255,0.2)",
     transition: "all 0.3s",
@@ -348,18 +351,19 @@ const styles = {
 
   taskLeft: {
     flex: 1,
+    width: "100%",
   },
 
   taskTitle: {
     margin: 0,
-    fontSize: "22px",
+    fontSize: window.innerWidth < 600 ? "18px" : "22px",
     fontWeight: "700",
     color: "#0f172a",
   },
 
   taskDesc: {
     margin: "8px 0 0",
-    fontSize: "17px",
+    fontSize: window.innerWidth < 600 ? "14px" : "17px",
     color: "#475569",
     lineHeight: "1.5",
   },
@@ -378,9 +382,10 @@ const styles = {
 
   taskRight: {
     display: "flex",
-    flexDirection: "column",
-    gap: "8px",
+    flexDirection: window.innerWidth < 600 ? "row" : "column",
+    gap: window.innerWidth < 600 ? "8px" : "8px",
     flexShrink: 0,
+    width: window.innerWidth < 600 ? "100%" : "auto",
   },
 
   updateBtn: {
@@ -390,9 +395,10 @@ const styles = {
     border: "1px solid rgba(37, 99, 235, 0.3)",
     borderRadius: "6px",
     cursor: "pointer",
-    fontSize: "16px",
+    fontSize: window.innerWidth < 600 ? "14px" : "16px",
     fontWeight: "600",
     whiteSpace: "nowrap",
+    flex: window.innerWidth < 600 ? 1 : "auto",
   },
 
   deleteBtn: {
@@ -402,9 +408,10 @@ const styles = {
     border: "1px solid rgba(220, 38, 38, 0.3)",
     borderRadius: "6px",
     cursor: "pointer",
-    fontSize: "16px",
+    fontSize: window.innerWidth < 600 ? "14px" : "16px",
     fontWeight: "600",
     whiteSpace: "nowrap",
+    flex: window.innerWidth < 600 ? 1 : "auto",
   },
 
   emptyState: {
@@ -434,20 +441,21 @@ const styles = {
   modal: {
     background: "#fff",
     borderRadius: "14px",
-    padding: "28px",
-    width: "420px",
+    padding: window.innerWidth < 600 ? "20px" : "28px",
+    width: window.innerWidth < 600 ? "90vw" : "420px",
+    maxWidth: "420px",
     boxShadow: "0 25px 50px rgba(0,0,0,0.3)",
   },
 
   modalTitle: {
-    fontSize: "30px",
+    fontSize: window.innerWidth < 600 ? "24px" : "30px",
     fontWeight: "800",
     color: "#0f172a",
     margin: "0 0 20px",
   },
 
   label: {
-    fontSize: "16px",
+    fontSize: window.innerWidth < 600 ? "14px" : "16px",
     fontWeight: "700",
     color: "#475569",
     display: "block",
@@ -458,7 +466,7 @@ const styles = {
     padding: "11px 12px",
     border: "1.5px solid #e2e8f0",
     borderRadius: "8px",
-    fontSize: "15px",
+    fontSize: window.innerWidth < 600 ? "14px" : "15px",
     width: "100%",
     boxSizing: "border-box",
     outline: "none",

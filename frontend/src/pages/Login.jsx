@@ -41,13 +41,13 @@ export default function Login() {
         }
       `}</style>
       
-      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", backgroundImage: `url(${BG})`, backgroundSize: "cover", backgroundPosition: "center bottom", fontFamily: "'Arial Narrow', 'Impact', sans-serif" }}>
+      <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", backgroundImage: `url(${BG})`, backgroundSize: "cover", backgroundPosition: "center bottom", fontFamily: "'Arial Narrow', 'Impact', sans-serif", padding: "20px" }}>
 
-        <div style={{ width: "920px", borderRadius: "22px", overflow: "hidden", backdropFilter: "blur(2px)", background: "rgba(5,15,30,0.18)", padding: "65px 55px" }}>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "40px" }}>
+        <div style={{ width: "100%", maxWidth: "920px", borderRadius: "22px", overflow: "hidden", backdropFilter: "blur(2px)", background: "rgba(5,15,30,0.18)", padding: window.innerWidth < 768 ? "40px 20px" : "65px 55px" }}>
+          <div style={{ display: "flex", flexDirection: window.innerWidth < 768 ? "column" : "row", alignItems: "center", justifyContent: "space-between", gap: window.innerWidth < 768 ? "30px" : "40px" }}>
 
             {/* LEFT */}
-            <div style={{ flex: 1, color: "#fff" }}>
+            <div style={{ flex: 1, color: "#fff", display: window.innerWidth < 768 ? "none" : "block" }}>
               <div style={{ fontSize: "40px", fontWeight: 900, letterSpacing: "2px", fontFamily: "'Arial', sans-serif", display: "block", marginBottom: "16px" }}>
                 ✓ Taskify
               </div>
@@ -66,7 +66,7 @@ export default function Login() {
             </div>
 
             {/* RIGHT - form card */}
-            <div style={{ width: "340px", flexShrink: 0, background: "rgba(150,165,190,0.30)", backdropFilter: "blur(20px)", borderRadius: "16px", padding: "32px 28px" }}>
+            <div style={{ width: window.innerWidth < 768 ? "100%" : "340px", flexShrink: 0, background: "rgba(150,165,190,0.30)", backdropFilter: "blur(20px)", borderRadius: "16px", padding: "32px 28px" }}>
 
               <label style={{ display: "block", fontSize: "15px", color: "#fff", marginBottom: "7px" }}>Email</label>
               <input name="email" type="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} style={{ ...inp, marginBottom: "16px" }} />

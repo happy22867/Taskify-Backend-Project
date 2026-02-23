@@ -51,14 +51,14 @@ const Landing = () => {
         <div
           style={{
             position: "relative",
-            height: "500px",
+            height: window.innerWidth < 600 ? "350px" : "500px",
             background: `url('https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=800&q=80')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             display: "flex",
             flexDirection: "column",
             justifyContent: "flex-end",
-            padding: "40px 30px",
+            padding: window.innerWidth < 600 ? "30px 20px" : "40px 30px",
           }}
         >
           {/* Dark gradient overlay */}
@@ -85,7 +85,7 @@ const Landing = () => {
             <h1
               style={{
                 color: "white",
-                fontSize: "32px",
+                fontSize: window.innerWidth < 600 ? "24px" : "32px",
                 fontWeight: "bold",
                 lineHeight: "1.2",
                 marginBottom: "30px",
@@ -105,10 +105,10 @@ const Landing = () => {
               style={{
                 background: "#c4f542",
                 color: "#1a2a3a",
-                padding: "16px 32px",
+                padding: window.innerWidth < 600 ? "12px 24px" : "16px 32px",
                 border: "none",
                 borderRadius: "50px",
-                fontSize: "16px",
+                fontSize: window.innerWidth < 600 ? "14px" : "16px",
                 fontWeight: "600",
                 cursor: "pointer",
                 display: "flex",
