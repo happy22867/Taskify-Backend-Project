@@ -11,6 +11,7 @@ const app = express();
 
 const allowedOrigins = [
   "https://taskify-backend-project-vrjk.vercel.app",
+  "https://taskify-backend-project.vercel.app",
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
