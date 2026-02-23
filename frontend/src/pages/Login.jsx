@@ -66,7 +66,7 @@ export default function Login() {
             </div>
 
             {/* RIGHT - form card */}
-            <div style={{ width: window.innerWidth < 768 ? "100%" : "340px", flexShrink: 0, background: "rgba(150,165,190,0.30)", backdropFilter: "blur(20px)", borderRadius: "16px", padding: "32px 28px" }}>
+            <div style={{ width: "340px", flexShrink: 0, background: "rgba(150,165,190,0.30)", backdropFilter: "blur(20px)", borderRadius: "16px", padding: "32px 28px" }}>
 
               <label style={{ display: "block", fontSize: "15px", color: "#fff", marginBottom: "7px" }}>Email</label>
               <input name="email" type="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} style={{ ...inp, marginBottom: "16px" }} />

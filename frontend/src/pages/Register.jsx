@@ -91,13 +91,13 @@ export default function Register() {
 
         <div className="register-card">
 
-          <div style={{ flex: 1, padding: window.innerWidth < 600 ? "30px 20px" : "50px 44px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <div style={{ flex: 1, padding: "50px 44px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
 
             <div style={{ fontSize: 21, fontWeight: 700, color: "#4a7a3a", fontStyle: "italic", marginBottom: 16 }}>
               TaskApp
             </div>
 
-            <h1 style={{ fontSize: window.innerWidth < 600 ? "24px" : "32px", color: "black", fontWeight: 800, marginBottom: 32 }}>
+            <h1 style={{ fontSize: 32, color: "black", fontWeight: 800, marginBottom: 32 }}>
               Create Your<br />Taskify <br /> Account
             </h1>
 
@@ -131,7 +131,7 @@ export default function Register() {
             <div style={{ color: "#aaa", marginBottom: 16 }}>or</div>
 
             {/* FORM */}
-            <form onSubmit={handleSubmit} autoComplete="off" style={{ display: "flex", flexDirection: "column", gap: 11, maxWidth: window.innerWidth < 600 ? "100%" : "300px" }}>
+            <form onSubmit={handleSubmit} autoComplete="off" style={{ display: "flex", flexDirection: "column", gap: 11, maxWidth: 300 }}>
 
               {/* NAME */}
               <input

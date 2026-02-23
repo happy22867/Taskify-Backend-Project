@@ -85,7 +85,7 @@ const Landing = () => {
             <h1
               style={{
                 color: "white",
-                fontSize: window.innerWidth < 600 ? "24px" : "32px",
+                fontSize: "32px",
                 fontWeight: "bold",
                 lineHeight: "1.2",
                 marginBottom: "30px",
@@ -105,10 +105,10 @@ const Landing = () => {
               style={{
                 background: "#c4f542",
                 color: "#1a2a3a",
-                padding: window.innerWidth < 600 ? "12px 24px" : "16px 32px",
+                padding: "16px 32px",
                 border: "none",
                 borderRadius: "50px",
-                fontSize: window.innerWidth < 600 ? "14px" : "16px",
+                fontSize: "16px",
                 fontWeight: "600",
                 cursor: "pointer",
                 display: "flex",
